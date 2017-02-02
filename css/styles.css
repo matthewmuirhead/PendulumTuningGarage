@@ -1,0 +1,404 @@
+/* http://typecast.com/images/uploads/modernscale.css */
+
+body {
+  font-size: 100%;
+}
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+#page {
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */
+}
+
+@media (min-width: 43.75em) {
+  #page {
+    font-size: 1em;
+    /* equivalent to 16px */
+    line-height: 1.375;
+    /* equivalent to 22px */
+  }
+}
+
+h1 {
+  font-size: 2em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */
+}
+
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    /* 3x body copy size = 48px */
+    line-height: 1.05;
+    /* keep to a multiple of the 20px line height and something more appropriate for display headings */
+  }
+}
+
+h2 {
+  font-size: 1.625em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15384615;
+  /* 30px / 26px */
+}
+
+@media (min-width: 43.75em) {
+  h2 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h2 {
+    font-size: 2.25em;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: 1.375em;
+  /* 1.375x body copy size = 22px */
+  line-height: 1.13636364;
+  /* 25px / 22px */
+}
+
+@media (min-width: 43.75em) {
+  h3 {
+    font-size: 1.5em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h3 {
+    font-size: 1.75em;
+    /* 1.75x body copy size = 28px */
+    line-height: 1.25;
+  }
+}
+
+h4 {
+  font-size: 1.125em;
+  /* 1.125x body copy size = 18px */
+  line-height: 1.11111111;
+}
+
+@media (min-width: 43.75em) {
+  h4 {
+    line-height: 1.22222222;
+    /* (22px / 18px */
+  }
+}
+
+blockquote {
+  font-size: 1.25em;
+  /* 20px / 16px */
+  line-height: 1.25;
+  /* 25px / 20px */
+}
+
+@media (min-width: 43.75em) {
+  blockquote {
+    font-size: 1.5em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;
+    /* 35px / 24px */
+  }
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif; /* Sets default font for all text to roboto with a backup of sans-serif*/
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif; /* Sets default font for h1, h2 and h3 to roboto with a backup of sans-serif*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 100%;
+  text-align: justify;
+  font-size: 1.5em;
+  color: #212121;
+  list-style: none;
+  text-decoration: none;
+  background-color: #757575;
+  background-image: url(../images/texture-stripe-dark.png);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+}
+
+a {
+  text-decoration: none; /* Deaults links to have no underline */
+}
+
+.nav-desktop {
+  background: #303030 center center repeat-x scroll;
+  order: -1;
+  padding: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 0em;
+  height: 2.5em;
+  padding-left: 6em;
+  width:100%;
+  text-align: left;
+  position: fixed;
+  z-index: 999;
+}
+
+.footer {
+  padding: 1em;
+  background: rgb(27, 83, 110);
+  text-align: center;
+  width: auto;
+  margin-bottom: 1em;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.main {
+  padding: 0;
+  background: #444444;
+  text-align: justify;
+}
+
+.aside {
+  /*padding: 1em;*/
+  text-align: center;
+  background: #607D8B;
+}
+
+/* Start of menu button */
+
+.menu-container { /* Sets the location of the menu button */
+  /*padding: 2em;*/
+  height: 100%;
+  float: right;
+  text-align: left;
+  margin-top: -50px;
+}
+
+/* Source 2 */
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #DDD;
+    margin: 6px 0;
+    transition: 0.4s;
+    position: relative;
+    z-index: 100;
+}
+
+/* Rotate first bar */
+.menu:hover .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.menu:hover .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.menu:hover .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/* End of source 2 */
+
+.nav-tree { /* Dropdown navigation menu */
+  display: block;
+  position: relative;
+  list-style-type: none; /* Removes bullet points from the list */
+  line-height: 2.5em;
+  width: 7.25em;
+  text-align: left;
+  /*padding: 0.5em;*/
+  margin: 0;
+  cursor: pointer;
+  display: none;
+  order: -1;
+  z-index: 10;
+  background: #BDBDBD;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%);
+}
+
+.menu:hover .nav-tree {
+  display: block;
+  cursor: pointer;
+}
+
+.menu-button {
+  /*display:inline-block;
+  padding:0 .45em;
+  color:#9f9f9f;
+  font:normal normal 16px 'Trebuchet MS',Helvetica,sans-serif;
+  text-decoration:none;
+  text-shadow:inherit;
+  background:#303030 scroll;line-height:46px !important;
+  border-top:4px solid #e6e6e6;*/
+  display: inline-block;
+  font-size: 1.1em;
+  color: #FF6100;
+  border-top: 4px solid #FF6100;
+  padding: 0.45em;
+
+  -webkit-margin-before: 0em; /* Overwrites default top spacing */
+  -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
+  margin-right: 0.25em;
+}
+
+.menu-button:hover { /* Changes state of button when hovered over */
+  color: #212121;
+  background-color: #FF6100; /* Makes button a darker shade */
+  box-shadow: 0px -3px 0px 0px #FF6100, 0px -5px 0px #FF6100;
+  padding-bottom: 0.5em;
+  animation: animation-rotate 0.5s linear 1; /* Rotates button */
+  cursor: pointer;
+}
+/* End of menu button */
+
+.login-form {
+  display: flex;
+  float: right;
+  padding-right: 8em;
+  padding-bottom: 2em;
+}
+
+.username-box, .password-box {
+  margin: 0.2em;
+  margin-top: 0.8em;
+}
+
+.banner-container {
+  height: 9.2em;
+  background-color: #646464;
+}
+
+.banner {
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  height: 5em;
+  background-position: center;
+  overflow: hidden;
+  margin-top: 3.5em;
+  width: 100%;
+}
+
+.horizontal-container { /* horizontal flexbox */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.content-origin, .content-about {
+  padding: 1em;
+  background-color: #949494;
+  margin: 1em;
+}
+
+.content-rss {
+  padding: 1.5em;
+  padding-top: 0.5em;
+	height: 40em;
+	text-align: left;
+  padding-bottom: 11.5em;
+  line-height: 1.5em;
+  width: 25%;
+}
+
+
+a.twitter-timeline {
+  /* Buttonish */
+  display: inline-block;
+  padding: 6px 12px 6px 30px;
+  margin: 10px 0;
+  border: #ccc solid 1px;
+  border-radius: 3px;
+  background: #f8f8f8 url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNzIgNzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDcyIDcyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHg9IjAiIGZpbGw9Im5vbmUiIHdpZHRoPSI3MiIgaGVpZ2h0PSI3MiIvPg0KPHBhdGggZmlsbD0iIzU1YWNlZSIgZD0iTTY4LjgxMiwxNS4xNDFjLTIuMzQ4LDEuMDM5LTQuODY5LDEuNzQzLTcuNTE5LDIuMDZjMi43MDMtMS42Miw0Ljc3OC00LjE4Nyw1Ljc1Ni03LjI0NGMtMi41MjksMS41LTUuMzMsMi41OTItOC4zMTMsMy4xNzYNCglDNTYuMzQ5LDEwLjU5MSw1Mi45NDgsOSw0OS4xODIsOWMtNy4yMjksMC0xMy4wOTIsNS44NjEtMTMuMDkyLDEzLjA5M2MwLDEuMDI2LDAuMTE4LDIuMDIxLDAuMzM4LDIuOTgxDQoJYy0xMC44ODUtMC41NDgtMjAuNTI4LTUuNzU3LTI2Ljk4Ny0xMy42NzljLTEuMTI2LDEuOTM2LTEuNzcxLDQuMTg0LTEuNzcxLDYuNTgxYzAsNC41NDIsMi4zMTIsOC41NTEsNS44MjQsMTAuODk4DQoJYy0yLjE0Ni0wLjA2OS00LjE2NS0wLjY1Ny01LjkzLTEuNjM4Yy0wLjAwMiwwLjA1NS0wLjAwMiwwLjExLTAuMDAyLDAuMTYyYzAsNi4zNDUsNC41MTMsMTEuNjM4LDEwLjUwNCwxMi44NA0KCWMtMS4xMDEsMC4yOTgtMi4yNTYsMC40NTctMy40NDksMC40NTdjLTAuODQ2LDAtMS42NjctMC4wNzgtMi40NjUtMC4yMzFjMS42NjcsNS4yLDYuNDk5LDguOTg2LDEyLjIzLDkuMDkNCgljLTQuNDgyLDMuNTEyLTEwLjEyOSw1LjYwNi0xNi4yNiw1LjYwNmMtMS4wNTUsMC0yLjA5Ni0wLjA2MS0zLjEyMi0wLjE4NGM1Ljc5NCwzLjcxNywxMi42NzYsNS44ODIsMjAuMDY3LDUuODgyDQoJYzI0LjA4MywwLDM3LjI1MS0xOS45NDksMzcuMjUxLTM3LjI0OWMwLTAuNTY2LTAuMDE0LTEuMTM0LTAuMDM5LTEuNjk0QzY0LjgzOCwyMC4wNjgsNjcuMDU4LDE3Ljc2NSw2OC44MTIsMTUuMTQxeiIvPg0KPC9zdmc+DQo=") 8px 8px no-repeat;
+  background-size: 1em 1em;
+
+
+  /* Text */
+  font: normal 12px/18px Helvetica, Arial, sans-serif;
+  color: #333;
+  white-space: nowrap;
+}
+
+a.twitter-timeline:hover,
+a.twitter-timeline:focus {
+  background-color: #dedede;
+}
+
+.content-sponsors {
+  width: 75%;
+}
+
+.thrustmaster-logo {
+  width: 100%;
+}
+
+/* Animations */
+@keyframes animation-rotate { /* Rotate animation for the buttons */
+	0% {
+		transform: rotateX(0deg);
+	}
+	50% {
+		transform: rotateX(45deg);
+	}
+  100% {
+		transform: rotateX(0deg);
+	}
+}
+
+@media (max-width: 30em) {
+  .main {
+    flex: 1 0 auto;
+  }
+}
+
+@media (min-width: 30em) {
+  .nav {
+    display: block;
+  }
+  .wrapper {
+    flex-direction: row;
+  }
+  .main {
+    flex: 1 1 auto;
+  }
+  .aside {
+    width: 20%;
+  }
+}
