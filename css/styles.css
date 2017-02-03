@@ -362,8 +362,22 @@ a.twitter-timeline:focus {
   background-color: #dedede;
 }
 
-.content-sponsors {
+.content-news-sponsors {
   width: 75%;
+  margin: 0.5em;
+  margin-right: 1em;
+  margin-bottom: 1.5em;
+}
+
+.content-news {
+  background-color: #949494;
+  padding: 1em;
+}
+
+.content-sponsors {
+  background-color: #949494;
+  margin-top: 1em;
+  padding: 1em;
 }
 
 .thrustmaster-logo {
@@ -384,7 +398,41 @@ a.twitter-timeline:focus {
 }
 
 .event-heading h3 {
-  padding: 1em;
+  padding: 0.5em;
+  padding-left: 1em;
+}
+
+.content-event-heading {
+  width: 50%;
+  text-align: left;
+  float: left;
+}
+
+.content-expand-close {
+  width: 50%;
+  float: right;
+}
+
+.expand-icon {
+  float: right;
+  margin-top: 3.1em;
+  margin-right: 3em;
+  display: inline-block !important;
+}
+
+.close-icon {
+  float: right;
+  margin-top: 3.1em;
+  margin-right: 3em;
+  display: none !important;
+}
+
+.change .expand-icon {
+  display: none !important;
+}
+
+.change .close-icon {
+  display: inline-block !important;
 }
 
 .event-content h3, .event-content-bottom h3 {
@@ -404,6 +452,11 @@ a.twitter-timeline:focus {
 
 .change .event-content, .change .event-content-bottom {
   display: block;
+}
+
+.general-rules {
+  width: 100%;
+  padding: 1em;
 }
 
 .picture-container {
@@ -430,6 +483,29 @@ a.twitter-timeline:focus {
 
 .member-bio {
   width: 80%;
+}
+
+.event-description {
+  background-color: #949494;
+  margin: 1em;
+  padding: 1em;
+}
+
+.sign-up {
+  width: 760px;
+  height: 500px;
+  margin: 3em;
+}
+
+.signed-up {
+  width: 760px;
+  height: 500px;
+  margin: 3em;
+}
+
+.color-green {
+  color: #00D000;
+  font-weight: bold;
 }
 
 /* Animations */
