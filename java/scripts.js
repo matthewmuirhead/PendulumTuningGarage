@@ -20,4 +20,8 @@ function hideNav() {
   console.log("0");
 }
 
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+
 document.addEventListener('DOMContentLoaded', loadFunction);

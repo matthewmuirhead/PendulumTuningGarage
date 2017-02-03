@@ -184,6 +184,7 @@ a {
   margin-right: 4em;
   margin-top: 1em;
   margin-bottom: 1em;
+  align-content: center;
 }
 
 .main {
@@ -302,14 +303,14 @@ a {
 }
 
 .banner-container {
-  height: 9.2em;
+  height: 19.2em;
   background-color: #646464;
 }
 
 .banner {
   background-image: url(../images/banner.jpg);
   background-size: cover;
-  height: 5em;
+  height: 15em;
   background-position: center;
   overflow: hidden;
   margin-top: 3.5em;
@@ -367,6 +368,68 @@ a.twitter-timeline:focus {
 
 .thrustmaster-logo {
   width: 100%;
+}
+
+.event-heading {
+  border-radius: 25px;
+  align-self: center;
+  padding: 1em;
+  background-color: #FF6100;
+  width: 80%;
+  margin: 1em;
+  padding: 0;
+  cursor: pointer;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.event-heading h3 {
+  padding: 1em;
+}
+
+.event-content h3, .event-content-bottom h3 {
+  padding: 0em;
+}
+
+.event-content, .event-content-bottom {
+  background-color: #F3F3F3;
+  display: none;
+  margin-top: -1em;
+}
+
+.event-content-bottom {
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.change .event-content, .change .event-content-bottom {
+  display: block;
+}
+
+.picture-container {
+  width: 30%;
+  padding: 1em;
+}
+
+.picture {
+  width: 100%;
+}
+
+.description {
+  width: 70%;
+}
+
+.avatar-container {
+  width: 15%;
+  padding: 1em;
+}
+
+.avatar {
+  width: 90%;
+}
+
+.member-bio {
+  width: 80%;
 }
 
 /* Animations */
