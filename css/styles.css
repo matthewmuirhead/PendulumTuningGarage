@@ -439,19 +439,30 @@ a.twitter-timeline:focus {
   padding: 0em;
 }
 
-.event-content, .event-content-bottom {
+.event-content, .event-content-bottom, .forzatography-content {
   background-color: #F3F3F3;
   display: none;
   margin-top: -1em;
+  cursor: auto;
 }
 
-.event-content-bottom {
+.event-content-bottom, .forzatography-content {
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
 }
 
-.change .event-content, .change .event-content-bottom {
+.change .event-content, .change .event-content-bottom, .forzatography-content {
   display: block;
+}
+
+.forzatography-heading {
+  margin: 1em;
+  padding: 0.25em;
+}
+
+.forzatography-content {
+  display: flex;
+  justify-content: space-around;
 }
 
 .general-rules {
@@ -508,6 +519,21 @@ a.twitter-timeline:focus {
   font-weight: bold;
 }
 
+.discord {
+  width: 30%;
+  margin: 1em;
+}
+
+.cursor-reset {
+  cursor: default;
+}
+
+.gif {
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 85%;
+}
+
 /* Animations */
 @keyframes animation-rotate { /* Rotate animation for the buttons */
 	0% {
@@ -540,4 +566,53 @@ a.twitter-timeline:focus {
   .aside {
     width: 20%;
   }
+}
+
+/* Deeny's code*/
+
+.gallery {
+    /* source 4 start */
+    display: inline-block;
+    flex: 0 1 auto;
+    order: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    list-style: none;
+}
+
+.tabitem {
+    display: inline-block;
+    width: 19.2em;
+    height: 10.8em;
+    min-width: 20em;
+    max-width: 20em;
+    position: relative;
+}
+
+li a img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition-property: width, height, right, z-index;
+    transition-duration: 1s;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+
+
+/* when clicked on the image will expand in size by 250% using css animations */
+
+li a:focus img {
+    display: inline-block;
+    width: 250%;
+    height: 250%;
+    position: absolute;
+    box-shadow: 0 0 15px 2px #000;
+    transition-property: width, height, right, z-index;
+    transition-duration: 1s;
+    cursor: default;
+    z-index: 25;
+    right: -75%;
 }
